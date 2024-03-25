@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_gymapp/screens/exercicioscreen.dart';
-import 'package:flutter_gymapp/screens/splash.screen.dart';
+import 'package:flutter_gymapp/screens/login.screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +10,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // return const GetMaterialApp(
     return const MaterialApp(
-        // home: ExercicioScreen(),
-        home: SplashScreen());
+      debugShowCheckedModeBanner: false,
+      title: 'Minha UFDPar',
+      home: LoginScreen(),
+    );
   }
 }
